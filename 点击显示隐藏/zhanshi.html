@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<span data-c="11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111" data-d='111111111111111111111111111......'>111111111111111111111111111......</span>  
+<a class="xq" href="javascript:void(0);" data="1">查看详情</a>
+<br>
+
+<hr>
+
+
+<br>
+<span data-c='222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222' data-d="22222222222222222222222222222222...">22222222222222222222222222222222...</span>
+<a class="xq" href="javascript:void(0);" data="1">查看详情</a>
+
+<script type="text/javascript">
+var on = function (obj,event,func,type) {
+  for (var i = obj.length - 1; i >= 0; i--) {
+    if (window.addEventListener)
+      obj[i].addEventListener(event,func,type);
+    else
+      obj[i].attachEvent("on"+event,func,type);
+  };
+};
+
+//原生写法
+   on(document.querySelectorAll('.xq'), 'click', function(){
+      var el = event.target;
+      var e = el.previousElementSibling;
+      if (el.getAttribute('data') == "1") {
+          e.textContent = e.getAttribute('data-c');
+          el.textContent = "隐藏详情";
+          el.setAttribute('data', 0);
+      } else {
+          e.textContent = e.getAttribute('data-d');
+          el.textContent = "查看详情";
+          el.setAttribute('data', 1);
+      }
+    });
+
+//jq 写法
+/*    $('.xq').live('click', function(){
+        console.log($(this))
+      var e = $(this).prev();
+      if ($(this).attr('data') == "1") {
+          e.text(e.attr('data-c'));
+          $(this).text("隐藏详情");
+          $(this).attr('data', 0);
+      } else {
+          e.text(e.attr('data-d'));
+          $(this).text("显示详情");
+          $(this).attr('data', 1);
+      }
+    });*/
+</script>
+</body>
+</html>
