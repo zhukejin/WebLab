@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .a1 {
+            width: 100px;
+            height: 50px;
+            border: 1px red solid;
+            margin-left: 200px;
+        }
+
+        .a2 {
+            width: 500px;
+            height: 500px;
+            border: 2px black solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <span class="a1">鼠标进来</span>
+    <div class="a2" style="display: none;">这里是显示层</div>
+
+<script type="text/javascript">
+    var _El1 = document.getElementsByClassName('a1')[0];
+    var _El2 = document.getElementsByClassName('a2')[0];
+
+    _El1.addEventListener('mouseenter', function(){
+        stroge = 1;
+        _El2.style.display="";
+    },false);
+
+    _El1.addEventListener('mouseleave', function(){
+        _El2.style.display="none";
+    },false);
+
+    _El2.addEventListener('mouseenter', function(){
+        _El2.style.display="";
+    },false);
+
+    _El2.addEventListener('mouseleave', function(){
+        this.style.display="none";
+    },false);
+
+
+</script>
+</body>
+</html>

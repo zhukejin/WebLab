@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<a href="https://github.com/zhukejin1223/musicPlay" class="soure">GitHub Download</a>
+<div id="astronomy" class="astronomy"> 
+    <img src="111.jpg" class="vector">
+    <a href="#" class="play-ctrl"></a>
+    <div style="position: absolute;right: 0;">
+        <p>模仿百度首页音乐播放效果</p>
+        <p>兼容现代浏览器</p>
+        <br>
+        <br>
+        <ul>
+            <li>
+                <a href="http://demo.zhukejin.com">前端实验室</a>
+            </li>
+            <li>
+                <a href="http://blog.zhukejin.com">技术博客</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var El = document.querySelector("#astronomy a");
+    El.addEventListener("click",function(){
+        if (this.classList.contains("playing")) {
+            this.classList.remove("playing");
+            this.previousElementSibling.classList.remove("vector1");
+        } else {
+            this.classList.add("playing");
+            this.previousElementSibling.classList.add("vector1");
+        }
+    },false);
+
+</script>
+</body>
+</html>
