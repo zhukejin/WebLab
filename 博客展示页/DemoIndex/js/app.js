@@ -1,0 +1,1 @@
+requirejs.config({baseUrl:"DemoIndex/js/lib",paths:{app:"../app",jquery:"jquery-1.8.0.min"}}),require(["app/square","app/appendEl"],function(e,t){$(function(){var e=$("#hid_ctrl").val();t.appendEl(e)}),$(".page").live("click",function(){var e=$(this).children().text()-1;t.appendEl(e)})});

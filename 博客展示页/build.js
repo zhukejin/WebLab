@@ -1,0 +1,1 @@
+({appDir:"./",baseUrl:"DemoIndex/js/lib",dir:"../build",paths:{app:"../app",jquery:"jquery-1.8.0.min"}});

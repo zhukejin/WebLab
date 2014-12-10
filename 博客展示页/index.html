@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="demo展示页面" />
+		<meta name="keywords" content="Javascript CSS HTML5 展示"/>
+		<title>前端实验室</title>
+		<link rel="stylesheet" href="DemoIndex/css/square.css" type="text/css">
+		<!--[if IE 6]>
+				<script type="text/javascript">
+					var isIE6 = true;
+				</script>
+				<![endif]-->
+		<!--[if lt IE 8]>
+		<style>
+		.booth{margin:0 1% 30px 0;}
+		.booth:nth-child(3n) {
+			margin-right: 0;
+		}
+		</style>
+		<![endif]-->
+</head>
+<body>
+	<div class="squareMenu clearfix">
+		<ul>
+			<li class="focus"><a href="http://demo.zhukejin.com/">前端实验室</a></li>
+			<li class=""><a href="http://blog.zhukejin.com/">进入我的博客</a></li>
+		</ul>
+	</div>
+		<div class="squareContent clearfix">
+			<ul id="code_list"></ul>
+		</div>
+	<div>
+	</div>
+		<div class="loading f20">
+			<ul class="pager"></ul>
+		</div>
+		<input type="hidden" value="0" id="hid_ctrl">
+	</body>
+	<script data-main="DemoIndex/js/app" src="DemoIndex/js/require.js"></script>
+</html>
