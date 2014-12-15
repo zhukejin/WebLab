@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NumberProgressBar</title>
+  <link rel="stylesheet" type="text/css" href="assets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/number-pb.css">
+  <style>
+  body {
+  	font-family: Verdana,Arial,Helvetica,sans-serif;
+  }
+  .top-banner a {
+  	color: #FF534E;
+  }
+
+  .fz1 {
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 style="margin-top:50px">全站数据</h1>
+
+  <section id="sample-pb">
+    <article>
+      <h4 class="title 1"></h4>
+      <div class="number-pb 11">
+        <div class="number-pb-shown"></div>
+        <div class="number-pb-num">0</div>
+      </div>
+    </article>
+
+  <article>
+      <h4 class="title 2"></h4>
+      <div class="number-pb 22">
+        <div class="number-pb-shown"></div>
+        <div class="number-pb-num">0</div>
+      </div>
+    </article>
+
+
+    <article>
+      <h4 class="title 3"></h4>
+      <div class="number-pb 33">
+        <div class="number-pb-shown"></div>
+        <div class="number-pb-num">0</div>
+      </div>
+    </article>
+
+  <p class="fz1">峰值备注：7月12日，NBA球星勒布朗-詹姆斯宣布回归骑士队。</p>
+    <article>
+      <h4 class="title 4"></h4>
+      <div class="number-pb 44">
+        <div class="number-pb-shown"></div>
+        <div class="number-pb-num">0</div>
+      </div>
+    </article>
+
+
+    <article>
+      <h4 class="title 5"></h4>
+      <div class="number-pb 55">
+        <div class="number-pb-shown"></div>
+        <div class="number-pb-num">0</div>
+      </div>
+    </article>
+
+
+    <article>
+      <h4 class="title 6"></h4>
+      <div class="number-pb 66">
+        <div class="number-pb-shown"></div>
+        <div class="number-pb-num">0</div>
+      </div>
+    </article>
+
+    <p class="fz1">备注：月度活跃用户数，定义为每月访问网站4天及以上的用户数。</p>
+  </section>
+</div>
+
+
+
+
+<script src="assets/jquery.min.js"></script>
+<script src="assets/jquery.velocity.min.js"></script>
+<script src="assets/number-pb.js"></script>
+<script>
+  $(function() {
+
+    var num1 = 110;
+    var controlTitle = $('#sample-pb .1').text('日均PV(百万)---峰值逾1.44亿');
+    var controlBar = $('#sample-pb .11 ').NumberProgressBar({
+      duration: 5000,
+      current: num1
+    });
+
+    var num2 = 80;
+    var controlTitle = $('#sample-pb .2').text('日均UV(十万)---峰值逾1300万');
+    var controlBar = $('#sample-pb .22 ').NumberProgressBar({
+      duration: 5000,
+      current: num2
+    });
+
+    var num3 = 30;
+    var controlTitle = $('#sample-pb .3').text('日均注册用户数(百万)');
+    var controlBar = $('#sample-pb .33 ').NumberProgressBar({
+      duration: 5000,
+      current: num3
+    });
+
+    var num4 = 33;
+    var controlTitle = $('#sample-pb .4').text('月度PV(亿)');
+    var controlBar = $('#sample-pb .44 ').NumberProgressBar({
+      duration: 5000,
+      current: num4
+    });
+
+    var num5 = 120;
+    var controlTitle = $('#sample-pb .5').text('月度UV去重后(百万)');
+    var controlBar = $('#sample-pb .55 ').NumberProgressBar({
+      duration: 5000,
+      current: num5
+    });
+
+    var num6 = 30;
+    var controlTitle = $('#sample-pb .6').text('月度活跃用户数(百万)');
+    var controlBar = $('#sample-pb .66 ').NumberProgressBar({
+      duration: 12000,
+      current: num6
+    });
+
+
+  });
+</script>
+</body>
+</html>
