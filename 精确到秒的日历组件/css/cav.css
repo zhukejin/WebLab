@@ -1,0 +1,32 @@
+.soure{
+	display: block;
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	right: 0;
+	top: -20px\9;
+	right: -20px\9;
+	width: 200px;
+	height: 28px;
+	background-color: #333333;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14.040000000000001px;
+	line-height: 28px;
+	text-align: center;
+	-webkit-transform: translate(45px,45px) rotate(45deg) translateZ(0);
+	-moz-transform: translate(45px,45px) rotate(45deg);
+	-o-transform: translate(45px,45px) rotate(45deg);
+	transform: translate(45px,45px) rotate(45deg);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',M11=.7,M12=0.6,M21=-.7,M22=0.6);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.5),inset 0 0 2px #fff;
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.5),inset 0 0 2px #fff;
+	-o-box-shadow: 0 0 5px rgba(0,0,0,.5),inset 0 0 2px #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.5),inset 0 0 2px #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.soure:hover{
+	background-color: #8A0A0A;
+	color:white;
+}
+a{text-decoration:none;}
