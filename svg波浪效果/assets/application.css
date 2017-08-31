@@ -1,0 +1,230 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#section-start .wave-start {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0px;
+    overflow: hidden;
+    height: 10vw
+}
+
+#section-start .wave-start svg {
+    position: absolute;
+    left: -4px;
+    width: calc(100% + 8px);
+    top: 0px
+}
+
+#section-start .wave-start .wave-1 {
+    opacity: 1
+}
+
+#section-start .wave-start .wave-2 {
+    opacity: 0.3
+}
+
+#section-start .wave-start .wave-3 {
+    opacity: 0.3
+}
+
+#section-start .wave-start .wave-4 {
+    opacity: 0.3
+}
+
+#section-start .wave-start .wave-5 {
+    opacity: 0.3
+}
+
+#section-start .wave-start .wave-6 {
+    opacity: 0.3
+}
+
+#section-start .group-svg {
+    position: absolute;
+    z-index: 1;
+    bottom: -18vw;
+    right: 0px;
+    height: 624px
+}
+
+#section-start .group-svg > g * {
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease
+}
+
+#section-start .group-svg > g *:nth-last-child(1) {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+#section-start .group-svg > g *:nth-last-child(2) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s
+}
+
+#section-start .group-svg > g *:nth-last-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s
+}
+
+#section-start .group-svg > g *:nth-last-child(3) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s
+}
+
+#section-start .group-svg > g *:nth-last-child(4) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s
+}
+
+#section-start .group-svg > g *:nth-last-child(5) {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s
+}
+
+#section-start .group-svg > g *:nth-last-child(6) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s
+}
+
+#section-start .group-svg > g *:nth-last-child(7) {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s
+}
+
+#section-start .group-svg > g *:nth-last-child(8) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s
+}
+
+#section-start .group-svg > g *:nth-last-child(9) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s
+}
+
+#section-start .group-svg > g *:nth-last-child(10) {
+    -webkit-transition-delay: 0.55s;
+    transition-delay: 0.55s
+}
+
+#section-start .group-svg > g *:nth-last-child(11) {
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s
+}
+
+#section-start .group-svg > g *:nth-last-child(12) {
+    -webkit-transition-delay: 0.65s;
+    transition-delay: 0.65s
+}
+
+#section-start .group-svg > g *:nth-last-child(13) {
+    -webkit-transition-delay: 0.7s;
+    transition-delay: 0.7s
+}
+
+#section-start .group-svg > g *:nth-last-child(14) {
+    -webkit-transition-delay: 0.75s;
+    transition-delay: 0.75s
+}
+
+#section-start .group-svg > g *:nth-last-child(15) {
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s
+}
+
+#section-start .group-svg > g *:nth-last-child(16) {
+    -webkit-transition-delay: 0.85s;
+    transition-delay: 0.85s
+}
+
+#section-start .group-svg > g *:nth-last-child(17) {
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s
+}
+
+#section-start .group-svg > g *:nth-last-child(18) {
+    -webkit-transition-delay: 0.95s;
+    transition-delay: 0.95s
+}
+
+#section-start .group-svg > g *:nth-last-child(19) {
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s
+}
+
+#section-start .group-svg > g *:nth-last-child(20) {
+    -webkit-transition-delay: 1.05s;
+    transition-delay: 1.05s
+}
+
+#section-start .group-svg > g *:nth-last-child(21) {
+    -webkit-transition-delay: 1.1s;
+    transition-delay: 1.1s
+}
+
+#section-start .group-svg > g *:nth-last-child(22) {
+    -webkit-transition-delay: 1.15s;
+    transition-delay: 1.15s
+}
+
+#section-start .group-svg > g *:nth-last-child(23) {
+    -webkit-transition-delay: 1.2s;
+    transition-delay: 1.2s
+}
+
+#section-start .group-svg > g *:nth-last-child(24) {
+    -webkit-transition-delay: 1.25s;
+    transition-delay: 1.25s
+}
+
+#section-start .group-svg > g *:nth-last-child(25) {
+    -webkit-transition-delay: 1.3s;
+    transition-delay: 1.3s
+}
+
+#section-start .group-svg > g *:nth-last-child(26) {
+    -webkit-transition-delay: 1.35s;
+    transition-delay: 1.35s
+}
+
+#section-start .group-svg > g *:nth-last-child(27) {
+    -webkit-transition-delay: 1.4s;
+    transition-delay: 1.4s
+}
+
+#section-start .group-svg > g *:nth-last-child(28) {
+    -webkit-transition-delay: 1.45s;
+    transition-delay: 1.45s
+}
+
+#section-start .group-svg > g *:nth-last-child(29) {
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s
+}
+
+#section-start .group-svg > g *:nth-last-child(30) {
+    -webkit-transition-delay: 1.55s;
+    transition-delay: 1.55s
+}
+
+#section-start .group-svg > g *:nth-last-child(31) {
+    -webkit-transition-delay: 1.6s;
+    transition-delay: 1.6s
+}
+
+#section-start .group-svg > g *:nth-last-child(32) {
+    -webkit-transition-delay: 1.65s;
+    transition-delay: 1.65s
+}
